@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <title>OurChat</title>
+</head>
+
+<body>
+    <div class="app__wrap">
+        <div id="info" class="app__info"></div>
+        <div id="chatWindow" class="app__window"></div>
+        <!--사용자간의 채팅영역을 노출하는 곳-->
+        <div class="app__input__wrap">
+             <input id="chatInput" type="text" class="app__input" autofocus
+                placeholder="대화를 입력해주세요." > 
+                <button id="chatMessageSendBtn" class="app__button">전송</button> 
+            </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
