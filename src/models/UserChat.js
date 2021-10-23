@@ -2,12 +2,13 @@
 
 const mongoose = require('mongoose');
 
+
 const userchatSchema = mongoose.Schema({
     name: {
         type: String,
         maxlength:50
     },
-    content: {
+    message: {
         type: String
     },
 }, { timestamps: true })
@@ -29,18 +30,7 @@ module.exports = { UserChat }
 
 
 // //DB에 채팅 데이터 저장
-// router.post('/',(req,res) =>{
 
-
-//     const userchat = new UserChat(req.body)
-//     //request body 의 key-value값을 받아옴
-
-//     userchat.save((err)=>{
-//         //에러 처리
-//         if(err) return res.status(400).json({success:false, err})
-//         return res.status(200).json({success:true})
-//     })
-// })
 
 
 // //DB의 채팅내역을 받아옴

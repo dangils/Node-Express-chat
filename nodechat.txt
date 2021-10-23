@@ -1,0 +1,34 @@
+1. 소캣 emit 할시 -> db에 name,message 저장
+
+2. 새로운 유저 접속시 (newUserConnect) db 채팅 데이터 출력
+=========================
+
+#config
+(환경 변수 관리 폴더,MongoDB URL 이곳에 저장)
+dev.js
+key.js
+prod.js
+
+#middleware
+auth 
+1. 유저 스키마를 가져온다
+2. auth를 매개변수 req,res,next를 받는 화살표 함수로 선언한다
+
+=============================
+nodechat 파일구조
+js -> index.js   [메세지 입력, 출력 함수 생성]
+
+app.js [db연결, router.post로 데이터 db에 넣기, 소켓연결)
+채팅방 DB 저장 구현
+
+채팅 update되면 이름과 메세지를 userChat스키마에 넣고 
+db에 저장,
+
+새로운 소켓이 연결될때 db 채팅 내역을 해당 소켓에만 출력
+
+
+
+
+
+
+
